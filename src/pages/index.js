@@ -1,9 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { Hero } from "components";
 
 export default function Home() {
   return (
     <>
-      <div>HALOO</div>
+      <Hero />
     </>
   );
 }
