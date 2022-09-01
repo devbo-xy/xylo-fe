@@ -1,5 +1,5 @@
 {
-  "name": "danielscrivner-tes",
+  "name": "xylo-fe",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
