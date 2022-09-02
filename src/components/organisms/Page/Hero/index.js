@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <div className="min-h-screen bg-[#050505]">
+    <div className="min-h bg-[#050505]">
       <div className="w-full h-[4rem] bg-[#050505] ring-1 ring-[#1c1c1c] flex items-center justify-center relative">
         <div className="max-w-6xl w-full flex justify-center flex-row space-x-[17rem]">
           <Link href="# ">
@@ -30,7 +30,7 @@ export const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="px-12 w-full h-[80vh] flex justify-center items-center space-y-6 relative">
+      <div className="px-12 w-full h-[100vh] flex justify-center items-center space-y-6 relative">
         <div className="flex flex-col space-y-6">
           <div className="flex flex-col space-y-6">
             <h2 className="text-3xl text-white font-semibold tracking-wider w-[42%] ">
