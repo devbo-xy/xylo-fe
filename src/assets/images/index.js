@@ -22,3 +22,6 @@ export { default as Bloomberg } from "./bloomberg.svg";
 export { default as Espn } from "./espn.svg";
 export { default as NewYork } from "./newYorkTimes.svg";
 export { default as WashingtonPost } from "./washingtonPost.svg";
+export { default as Fire } from "./fireIcon.svg";
+export { default as Time } from "./timeIcon.svg";
+export { default as Archive } from "./archiveIcon.svg";

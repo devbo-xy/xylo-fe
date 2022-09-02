@@ -14,7 +14,7 @@ export const Card = () => {
 
   const Card = (props) => {
     return (
-      <div className="bg-white w-[21rem] h-[40rem] rounded-xl relative overflow-hidden">
+      <div className="bg-white w-full lg:w-[21rem] h-[40rem] rounded-xl relative overflow-hidden">
         <div className="relative">
           <Image className="rounded-t-xl" src={Assets.Img1} alt="Image 1" />
         </div>
@@ -45,46 +45,16 @@ export const Card = () => {
     );
   };
   return (
-    <div className="w-full min-h-screen bg-[#050505]">
-      {/* <div>
-        <h2> Multiple items </h2>
-        <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-          <div>
-            <h3>7</h3>
-          </div>
-          <div>
-            <h3>8</h3>
-          </div>
-          <div>
-            <h3>9</h3>
-          </div>
-        </Slider>
-      </div> */}
-      {/* <div className="max-w-6xl mx-auto">
-        <Slider>
+    <div className="w-full px-8 bg-[#050505]">
+      <div className="max-w-7xl mx-auto w-full flex justify-center items-center">
+        <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 space-x-0 lg:space-x-6">
+          {/* <Slider className="" {...settings}> */}
           <Card />
           <Card />
           <Card />
-        </Slider>
-      </div> */}
+          {/* </Slider> */}
+        </div>
+      </div>
 
       {/* <div className="bg-white w-[21rem] h-[40rem] rounded-xl relative overflow-hidden">
         <div className="relative">
