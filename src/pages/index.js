@@ -1,10 +1,11 @@
 import React, { Fragment } from "react";
-import { Hero } from "components";
+import { Card, Hero } from "components";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <Card />
     </>
   );
 }
