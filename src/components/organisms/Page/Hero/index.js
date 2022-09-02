@@ -10,24 +10,32 @@ export const Hero = () => {
         <div className="flex h-full items-center justify-center">
           <div className="max-w-6xl w-full flex justify-center flex-row space-x-[17rem]">
             <Link href="# ">
-              <h2 className="text-sm text-white font-semibold hover:text-[#FF9900]">
-                Podcast
-              </h2>
+              <div className="cursor-pointer">
+                <h2 className="text-sm text-white font-semibold hover:text-[#FF9900]">
+                  Podcast
+                </h2>
+              </div>
             </Link>
             <Link href="# ">
-              <h2 className="text-sm text-white font-semibold hover:text-[#FF9900]">
-                Newsletter
-              </h2>
+              <div className="cursor-pointer">
+                <h2 className="text-sm text-white font-semibold hover:text-[#FF9900]">
+                  Newsletter
+                </h2>
+              </div>
             </Link>
             <Link href="# ">
-              <h2 className="text-sm text-white font-semibold hover:text-[#FF9900]">
-                Topics & Tags
-              </h2>
+              <div className="cursor-pointer">
+                <h2 className="text-sm text-white font-semibold hover:text-[#FF9900]">
+                  Topics & Tags
+                </h2>
+              </div>
             </Link>
             <Link href="# ">
-              <h2 className="text-sm text-white font-semibold hover:text-[#FF9900]">
-                More
-              </h2>
+              <div className="cursor-pointer">
+                <h2 className="text-sm text-white font-semibold hover:text-[#FF9900]">
+                  More
+                </h2>
+              </div>
             </Link>
           </div>
         </div>

@@ -5,7 +5,7 @@ import Image from "next/image";
 export const Section = () => {
   const CardTwo = (props) => {
     return (
-      <div className="lg:w-[21rem] w-full h-[11rem] rounded-xl bg-white flex justify-center items-center text-center">
+      <div className="lg:w-[21rem] w-full h-[11rem] rounded-xl bg-white flex justify-center items-center text-center cursor-pointer">
         <div className="flex flex-col space-y-2 justify-center items-center">
           <div className="bg-black h-12 w-12 rounded-full flex justify-center items-center">
             <Image src={props.src} alt={props.alt} height={28} width={28} />
