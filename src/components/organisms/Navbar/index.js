@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Assets } from "assets";
-import ModalSearch from "../Modall";
+import ModalSearch from "../ModalSearch";
+import ModalSubs from "../ModalSubs";
 
 export const Navbar = () => {
   const [openModal, setOpenModal] = useState(false);
+  const [openSub, setOpenSub] = useState(false);
 
   useEffect(() => {
     const hamburger = document.querySelector("#hamburger");
@@ -61,7 +63,12 @@ export const Navbar = () => {
               </button>
             </div>
             <div className="hidden lg:block">
-              <button className="bg-[#292929] ring-1 ring-[#FFFFFF]/25 px-4 py-2 rounded-lg">
+              <button
+                onClick={() => {
+                  setOpenSub(true);
+                }}
+                className="bg-[#292929] ring-1 ring-[#FFFFFF]/25 px-4 py-2 rounded-lg"
+              >
                 <h2 className="text-white text-xs font-mono tracking-widest">
                   Subscribe
                 </h2>
@@ -152,6 +159,7 @@ export const Navbar = () => {
         </div>
       </nav>
       {openModal && <ModalSearch closeModal={setOpenModal} />}
+      {openSub && <ModalSubs closeModal={setOpenSub} />}
     </header>
   );
 };
