@@ -25,3 +25,4 @@ export { default as WashingtonPost } from "./washingtonPost.svg";
 export { default as Fire } from "./fireIcon.svg";
 export { default as Time } from "./timeIcon.svg";
 export { default as Archive } from "./archiveIcon.svg";
+export { default as Logo } from "./logoDaniel.png";

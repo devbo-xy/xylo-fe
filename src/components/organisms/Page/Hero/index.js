@@ -8,31 +8,31 @@ export const Hero = () => {
     <div className="min-h-screen bg-[#050505] pt-20 lg:pt-0">
       <div className="w-full h-[4rem] bg-[#050505] ring-1 ring-[#1c1c1c] relative hidden lg:block">
         <div className="flex h-full items-center justify-center">
-          <div className="max-w-6xl w-full flex justify-center flex-row space-x-[17rem]">
+          <div className="max-w-6xl w-full flex justify-center flex-row space-x-[15rem]">
             <Link href="# ">
               <div className="cursor-pointer">
-                <h2 className="text-sm text-white font-semibold hover:text-[#FF9900]">
+                <h2 className="text-xs text-white font-mono tracking-widest hover:text-[#FF9900]">
                   Podcast
                 </h2>
               </div>
             </Link>
             <Link href="# ">
               <div className="cursor-pointer">
-                <h2 className="text-sm text-white font-semibold hover:text-[#FF9900]">
+                <h2 className="text-xs text-white font-mono tracking-widest hover:text-[#FF9900]">
                   Newsletter
                 </h2>
               </div>
             </Link>
             <Link href="# ">
               <div className="cursor-pointer">
-                <h2 className="text-sm text-white font-semibold hover:text-[#FF9900]">
+                <h2 className="text-xs text-white font-mono tracking-widest hover:text-[#FF9900]">
                   Topics & Tags
                 </h2>
               </div>
             </Link>
             <Link href="# ">
               <div className="cursor-pointer">
-                <h2 className="text-sm text-white font-semibold hover:text-[#FF9900]">
+                <h2 className="text-xs text-white font-mono tracking-widest hover:text-[#FF9900]">
                   More
                 </h2>
               </div>
@@ -108,7 +108,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute w-[37rem] h-[37rem] right-[3rem] -top-0 hidden lg:block">
+        <div className="absolute w-[37rem] h-[38rem] right-[3rem] -top-8 hidden lg:block">
           <Image src={Assets.ProfilePic} alt="Profile Pic" layout="fill" />
         </div>
       </div>

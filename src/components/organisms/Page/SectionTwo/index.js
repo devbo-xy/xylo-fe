@@ -23,7 +23,7 @@ export const SectionTwo = () => {
                 </p>
               </div>
               <div className="bg-white h-[3rem] w-[12rem] mx-auto rounded-full flex justify-center items-center">
-                <span className="text-sm tracking-wider font-semibold">
+                <span className="text-sm font-semibold font-mono">
                   Explore Episodes
                 </span>
               </div>
@@ -81,7 +81,7 @@ export const SectionTwo = () => {
                 </p>
               </div>
               <div className="bg-white h-[3rem] w-[12rem] mx-auto rounded-full flex justify-center items-center">
-                <span className="text-sm tracking-wider font-semibold">
+                <span className="text-sm font-semibold font-mono">
                   Explore Episodes
                 </span>
               </div>
@@ -151,10 +151,8 @@ export const SectionTwo = () => {
                   className="bg-transparent text-base font-extralight tracking-wider outline-none text-white w-full"
                 />
               </div>
-              <div className="bg-white w-full lg:w-20 h-[3.4rem] ring-1 ring-[#FFFFFF] rounded-b-lg lg:rounded-l-none lg:rounded-r-lg hover:bg-[#FFFFFF]/70 flex items-center justify-center">
-                <span className="text-base tracking-wider font-semibold">
-                  Try It
-                </span>
+              <div className="bg-white w-full lg:w-20 h-[3.4rem] ring-1 ring-[#FFFFFF] rounded-b-lg lg:rounded-l-none lg:rounded-r-lg hover:bg-[#FFFFFF]/70 flex items-center justify-center cursor-pointer">
+                <span className="text-base font-mono">Try It</span>
               </div>
             </div>
             <div className="flex justify-center">
