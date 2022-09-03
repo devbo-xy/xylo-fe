@@ -16,7 +16,7 @@ export const SectionTwo = () => {
                 <h2 className="text-white text-2xl lg:text-3xl tracking-wide text-center">
                   Outliers Podcast
                 </h2>
-                <p className="text-center text-lg lg:text-xl text-white w-full lg:w-[80%] tracking-wider font-extralight">
+                <p className="text-center text-lg lg:text-xl text-white w-[95%] lg:w-[80%] tracking-wider font-extralight">
                   Every week, I sit down with someone in the Top 1% of their
                   field to decode what they've mastered and what they've learned
                   along the way.
@@ -36,7 +36,7 @@ export const SectionTwo = () => {
                   alt="Image Listen 1"
                 />
               </div>
-              <div className="lg:w-[12rem] w-[6.3rem] h-[6.3rem] lg:h-[12rem] absolute bottom-[3.5rem] lg:left-[11.5rem] lg:bottom-[6.5rem]">
+              <div className="lg:w-[12rem] w-[6.3rem] h-[6.3rem] lg:h-[12rem] absolute bottom-[3.5rem] left-[6.1rem] lg:left-[11.5rem] lg:bottom-[6.5rem]">
                 <Image
                   className="rounded-xl"
                   src={Assets.ImgListen2}
@@ -75,7 +75,7 @@ export const SectionTwo = () => {
                 <h2 className="text-white text-2xl lg:text-3xl tracking-wide text-center">
                   Friday 5 Email
                 </h2>
-                <p className="text-center text-lg lg:text-xl text-white w-full lg:w-[80%] tracking-wider font-extralight">
+                <p className="text-center text-lg lg:text-xl text-white w-[95%] lg:w-[80%] tracking-wider font-extralight">
                   Every Friday, I share five things I've been reading, using,
                   and loving—including articles, biohacks, gadgets, and more.
                 </p>
