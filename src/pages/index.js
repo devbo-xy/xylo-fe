@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Card, Hero, Section, SectionTwo } from "components";
+import { Card, Footer, Hero, Section, SectionTwo } from "components";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <Card />
       <Section />
       <SectionTwo />
+      <Footer />
     </>
   );
 }
