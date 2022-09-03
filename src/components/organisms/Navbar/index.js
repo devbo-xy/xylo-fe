@@ -1,9 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Assets } from "assets";
+import ModalSearch from "../Modall";
 
 export const Navbar = () => {
+  const [openModal, setOpenModal] = useState(false);
+
   useEffect(() => {
     const hamburger = document.querySelector("#hamburger");
     const navlinks = document.querySelector("#navlinks");
@@ -69,7 +72,12 @@ export const Navbar = () => {
                 <Image src={Assets.Logo} alt="Logo Litedex" />
               </div>
             </Link>
-            <button className="flex justify-center items-center lg:w-6 lg:h-6 w-8 h-8 rounded-md p-1 bg-[#292929] ring-1 ring-[#FFFFFF]/25">
+            <button
+              onClick={() => {
+                setOpenModal(true);
+              }}
+              className="flex justify-center items-center lg:w-6 lg:h-6 w-8 h-8 rounded-md p-1 bg-[#292929] ring-1 ring-[#FFFFFF]/25"
+            >
               <div className="text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -141,73 +149,9 @@ export const Navbar = () => {
               </div>
             </ul>
           </div>
-          {/* <div className="relative flex items-center">
-              <div className="hidden lg:block">
-                <button
-                  type="button"
-                  className="inline-flex justify-center items-center h-full w-full space-x-1 rounded-md p-2 text-sm font-medium text-white focus:outline-none "
-                  id="menu-button"
-                  aria-expanded="false"
-                  onClick={handleClick}
-                  // ref={btnDropdownRef}
-                >
-                  {LangJson.filter(
-                    (language) => language.code === router.locale
-                  ).map((language, index) => {
-                    return (
-                      <div
-                        className="flex flex-row items-center space-x-1"
-                        key={index}
-                      >
-                        <div className="relative">
-                          <Image
-                            src={language.icon}
-                            alt={`logo ${language.name}`}
-                            width={24}
-                            height={24}
-                          />
-                        </div>
-                        <span className="uppercase">{language.name}</span>
-                      </div>
-                    );
-                  })}
-        
-                  <ChevronDownIcon className="w-5 h-5 flex items-center text-[#1EC01E]" />
-                </button>
-              </div>
-              {showOptions && (
-                <div
-                  className="absolute right-0 top-14 w-full  justify-center rounded-md  border border-[#1EC01E] bg-black/40 flex text-sm font-medium text-white focus:outline-none"
-                  role="menu"
-                >
-                  <div>
-                    {LangJson.map((language) => (
-                      <div
-                        className="rounded-full flex-row lg:p-3 lg:w-full lg:text-left  lg:hover:bg-white/10 lg:rounded-xl cursor-pointer"
-                        key={language.country_code}
-                        value={router.locale}
-                        onClick={() => {
-                          handleLocaleChange(language.code);
-                          // document.body.style.overflow = "visible";
-                        }}
-                      >
-                        <div className="flex space-x-1">
-                          <Image
-                            src={language.icon}
-                            alt="Translation Logo"
-                            height={24}
-                            width={24}
-                          />
-                          <span className="uppercase">{language.name}</span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div> */}
         </div>
       </nav>
+      {openModal && <ModalSearch closeModal={setOpenModal} />}
     </header>
   );
 };

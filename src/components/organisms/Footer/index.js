@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import { Assets } from "assets";
+import Image from "next/image";
 
 export const Footer = () => {
   return (
@@ -19,11 +21,11 @@ export const Footer = () => {
               </div>
             </Link>
           </div>
-          <div>
-            <h2 className="text-white text-3xl text-center lg:text-left">
-              Daniel Scrivner
-            </h2>
-          </div>
+          <Link href="# ">
+            <div className="lg:w-[13rem] w-[11rem] h-full mx-auto lg:mx-0 lg:left-0 lg:relative cursor-pointer hover:text-[#FF9900]">
+              <Image src={Assets.Logo} alt="Logo Litedex" />
+            </div>
+          </Link>
         </div>
         <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 space-x-0 lg:space-x-0">
           <div className="w-[11rem]">

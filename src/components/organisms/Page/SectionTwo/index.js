@@ -22,7 +22,7 @@ export const SectionTwo = () => {
                   along the way.
                 </p>
               </div>
-              <div className="bg-white h-[3rem] w-[12rem] mx-auto rounded-full flex justify-center items-center">
+              <div className="bg-white hover:bg-gray-200 h-[3rem] w-[12rem] mx-auto rounded-full flex justify-center items-center cursor-pointer">
                 <span className="text-sm font-semibold font-mono">
                   Explore Episodes
                 </span>
@@ -80,7 +80,7 @@ export const SectionTwo = () => {
                   and loving—including articles, biohacks, gadgets, and more.
                 </p>
               </div>
-              <div className="bg-white h-[3rem] w-[12rem] mx-auto rounded-full flex justify-center items-center">
+              <div className="bg-white hover:bg-gray-200 h-[3rem] w-[12rem] mx-auto rounded-full flex justify-center items-center cursor-pointer">
                 <span className="text-sm font-semibold font-mono">
                   Explore Episodes
                 </span>
