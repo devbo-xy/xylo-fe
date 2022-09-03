@@ -12,11 +12,15 @@ export const Card = () => {
         <div className="relative">
           <Image className="rounded-t-xl" src={props.src} alt={props.alt} />
         </div>
-        <div className="bg-white w-full px-4 py-6 absolute top-[12.5rem] h-full">
+        <div className="bg-white w-full px-4 py-6 absolute top-[12rem] h-full">
           <div className="flex flex-col justify-between space-y-8 ">
             <div className="flex flex-col space-y-4 w-full">
-              <h2 className="font-bold text-xl tracking-wide">{props.title}</h2>
-              <p className="text-base tracking-wider">{props.desc}</p>
+              <h2 className="font-bold text-lg lg:text-xl tracking-wide">
+                {props.title}
+              </h2>
+              <p className="text-sm lg:text-base tracking-wider">
+                {props.desc}
+              </p>
             </div>
             <div>
               <span className="text-base font-semibold text-[#FF9900]">
@@ -37,7 +41,7 @@ export const Card = () => {
     slidesToScroll: 4,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1024,
@@ -46,7 +50,7 @@ export const Card = () => {
           slidesToScroll: 3,
           infinite: true,
           autoplay: true,
-          autoplaySpeed: 200,
+          autoplaySpeed: 3000,
           dots: true,
         },
       },
@@ -58,7 +62,7 @@ export const Card = () => {
           initialSlide: 2,
           infinite: true,
           autoplay: true,
-          autoplaySpeed: 200,
+          autoplaySpeed: 3000,
           dots: true,
         },
       },
@@ -70,7 +74,7 @@ export const Card = () => {
           infinite: true,
           dots: true,
           autoplay: true,
-          autoplaySpeed: 200,
+          autoplaySpeed: 3000,
         },
       },
     ],
