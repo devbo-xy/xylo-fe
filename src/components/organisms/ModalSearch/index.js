@@ -46,7 +46,7 @@ export default function ModalSearch({ closeModal }) {
                   className="bg-transparent text-white px-5 outline-none w-full"
                 />
               </div>
-              <div className="bg-[#212121] ring-1 ring-[#262626] rounded-full w-full py-4 flex items-center justify-center">
+              <div className="bg-[#212121] hover:bg-[#404040] hover:ring-[#5E5E5E] ring-1 ring-[#262626] rounded-full w-full py-4 flex items-center justify-center">
                 <span className="text-white text-sm font-mono">Search</span>
               </div>
             </div>
