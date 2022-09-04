@@ -148,7 +148,12 @@ export const Navbar = () => {
                 </Link>
               </li>
               <div className="flex">
-                <button className="bg-[#292929] ring-1 ring-[#FFFFFF]/25 px-4 py-2 rounded-lg w-[18rem]">
+                <button
+                  onClick={() => {
+                    setOpenSub(true);
+                  }}
+                  className="bg-[#292929] ring-1 ring-[#FFFFFF]/25 px-4 py-2 rounded-lg w-[18rem]"
+                >
                   <h2 className="text-white text-sm font-mono tracking-widest">
                     Subscribe
                   </h2>
